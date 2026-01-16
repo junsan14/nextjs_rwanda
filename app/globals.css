@@ -69,4 +69,45 @@ body {
   100% { transform: scale(1); opacity: 1; }
 }
 
+.link-summary {
+  padding: 20px;
+  font-family: sans-serif;
+  max-width: 600px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+
+.link-summary h1 {
+  color: #2563eb;
+  margin-bottom: 16px;
+}
+
+.link-summary section {
+  margin-bottom: 14px;
+}
+
+.link-summary h2 {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.link-summary code {
+  display: block;
+  background: #f3f4f6;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.link-summary span {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.note {
+  border-top: 1px dashed #d1d5db;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
 
