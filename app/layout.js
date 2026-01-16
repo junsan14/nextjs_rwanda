@@ -46,6 +46,11 @@ function Menu(){
     <aside className="w-[15%] min-w-[160px] border-r bg-white overflow-hidden">
       <ul className="flex flex-col gap-1 p-4">
         <li>
+          <Link href="/03-introduction" className="side-link">
+            Introduction
+          </Link>
+        </li>
+        <li>
           <Link href="/04-routing" className="side-link">
             Routing & Layout
           </Link>
