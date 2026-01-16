@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./link-summary.css";
 
 export default function LinkSummary() {
   return (
