@@ -76,8 +76,8 @@ function Menu(){
           </Link>
         </li>
         <li>
-          <Link href="/09-database" className="side-link">
-            Database
+          <Link href="/09-fetching-data" className="side-link">
+            Fetching Data
           </Link>
         </li>
       </ul>

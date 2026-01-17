@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { use } from "react";
 import useSWR from "swr";
 
 export function UsersWithUseEffect() {
@@ -27,26 +26,11 @@ export function UsersWithUseEffect() {
 
 
 
-const fetchUsers = fetch("/api/users").then(res => res.json());
 
-export function UsersWithUse() {
-  const users = use(fetchUsers);
-
-  return (
-  <>
-    <h2>Fetching data with use</h2>
-    <ul>
-      {users.map(u => (
-        <li key={u.id}>{u.name}</li>
-      ))}
-    </ul>
-  </>
-  );
-}
 
 const fetcher = url => fetch(url).then(res => res.json());
 
-export default function UsersWithuseSWR() {
+export function UsersWithuseSWR() {
   const { data, error, isLoading } = useSWR("/api/users", fetcher);
 
   if (isLoading) return <p>Loading...</p>;
