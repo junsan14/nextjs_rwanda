@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Sidebar from "@/app/components/Sidebar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +27,11 @@ export default function RootLayout({ children }) {
         <div className="flex min-h-screen">
           {/* Sidebar */}
 
-            <Menu />
+          <Sidebar />
 
 
           {/* Main content */}
-          <main className="flex-1 p-6">
+          <main className="ml-[250px] p-6">
             {children}
           </main>
         </div>
@@ -39,52 +39,4 @@ export default function RootLayout({ children }) {
       </body>
     </html>
   );
-}
-
-function Menu(){
-  return(
-    <aside className="w-[15%] min-w-[160px] border-r bg-white overflow-hidden">
-      <ul className="flex flex-col gap-1 p-4">
-        <li>
-          <Link href="/03-introduction" className="side-link">
-            Introduction
-          </Link>
-        </li>
-        <li>
-          <Link href="/04-routing" className="side-link">
-            Routing & Layout
-          </Link>
-        </li>
-        <li>
-          <Link href="/05-link" className="side-link">
-            Link
-          </Link>
-        </li>
-        <li>
-          <Link href="/06-client-server" className="side-link">
-            Client & Server Components
-          </Link>
-        </li>
-        <li>
-          <Link href="/07-state-events" className="side-link">
-            State & Events
-          </Link>
-        </li>
-        <li>
-          <Link href="/08-loading-error" className="side-link">
-            Loading & Error UI
-          </Link>
-        </li>
-        <li>
-          <Link href="/09-fetching-data" className="side-link">
-            Fetching Data
-          </Link>
-        </li>
-      </ul>
-    </aside>
-
-
- 
-
-  )
 }

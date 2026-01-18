@@ -1,5 +1,5 @@
 "use client";
-import useState from 'react';
+import {useState} from 'react';
 export default function ClientComponent() {
   const [value,setValue] = useState("");
   return (
@@ -7,7 +7,7 @@ export default function ClientComponent() {
       <p>Client Component</p>
       <input type="text" 
         onChange={(e)=>setValue(e.target.value)}
-      >
+      />
     </> 
     )
 }
